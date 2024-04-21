@@ -31,8 +31,44 @@ The UZX framework cannot protect the security of your digital assets, nor can it
 -If you want to use UZX as a commercial application, it is best to hire a lawyer to ensure that your commercial application is within the legal limits. We are not responsible for any legal or economic issues arising from commercial projects.
 
 4. Basic knowledge you need to know
-
 -Legal knowledge (safety first, law is the most important)
 -Java knowledge (mainly spring)
 -Linux knowledge (CentOS, Ubuntu, etc.)
 -Safety knowledge
+
+### Main technologies
+- Backend: Spring, SpringMVC, SpringData, SpringCloud, SpringBoot
+- Database: MySQL, Mongodb
+- Other: Redis, Kafka, OSS
+- Front end: Vue, iView, less
+  
+### testing environment
+- To prevent spoilage, a testing environment is not provided here. Please refer to the pictures for reference
+
+## Key Business Introduction
+The core modules of the backend framework are the exchange and market modules.
+
+The exhcnge module fully utilizes Java memory processing queues, greatly speeding up processing logic without involving database operations, ensuring fast processing speed. After the project starts, it inherits the Application Listener method and runs automatically;
+
+Automatically load unprocessed orders after startup and reload them into the JVM to ensure data accuracy. Exchange processes the orders and sends transaction records to the market;
+
+The market module mainly involves database operations, persisting user change information into the database. The main difficulty lies in interacting with the front-end for socket push. Socket push adopts two methods: SpringSocket on the web end and Netty push on the mobile end. Netty push is processed through scheduled tasks.
+## Environmental construction
+- Centos 7.6+
+- MySQL 5.7.16+
+- Redis 6.2.7
+- Mongodb 4.0+
+- kafka_2.11-2.2.1
+- nginx-1.16.0+
+- JRE 8u241
+- JDK 1.8
+- Vue
+## Service deployment preparation
+1. The project uses the Lombok plugin. Regardless of the IDE tool used, please make sure to install the Lombok plugin first
+2. The project uses QueryDsl. If you encounter a class starting with Q that cannot be found, please compile the corresponding core module first, such as core, exchange core, xxx core modules
+3. The jar package that cannot be found is located in the project jar folder
+4. JDK version 1.8 or above
+5. Initialize SQL and configure files in the SQL folder
+Opening this configuration file will automatically create a table
+#JPA
+Spring. jpa. hibernate. ddl auto=update
