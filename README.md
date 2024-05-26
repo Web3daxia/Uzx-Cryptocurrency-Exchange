@@ -160,3 +160,4 @@ water.proof.app.**
     nohup  java  -jar  /web/app/wallet.jar  >/dev/null 2>&1 & 
     nohup  java  -jar  /web/app/admin.jar  >/dev/null 2>&1 &
     ```
+    持续更新
