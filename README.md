@@ -7,7 +7,7 @@ UZX 数字加密货币交易系统
 - ## [English](README-EN.md)
 ---
 ### 提问和建议
-- Telegram:https://t.me/liuyuehi
+- 欢迎咨询：Telegram:https://t.me/liuyuehi
 
 #### UZX 是一个数字货币交易系统，它使用目前最流行的Java框架和相关技术开发而成。
 
