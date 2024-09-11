@@ -10,7 +10,7 @@ This source code is for communication and learning only, and any legal issues re
 #### Questions and suggestions
 
 - Telegram: https://t.me/liuyuehi
-#### UZX is a digital currency trading system developed using the most popular Java framework and related technologies.
+#### UZX is a digital currency trading system developed using the most popular Java framework and related technologies.。
 
 ## vision
    Our mission is to develop the world's best, high-performance, secure, and open-source (key) digital currency trading system using Java
