@@ -9,7 +9,7 @@ This source code is for communication and learning only, and any legal issues re
 
 #### Questions and suggestions
 
-- Telegram: https://t.me/liuyuehi
+- Telegram: https://t.me/coinshuai
 #### UZX is a digital currency trading system developed using the most popular Java framework and related technologies.。
 
 ## vision
